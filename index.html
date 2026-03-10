@@ -1,0 +1,53 @@
+# Screening.aspx.id-Kantar.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Screener</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: #fff;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Unique loader: glowing pulse */
+    .loader {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #00c6ff, #0072ff);
+      animation: pulse 1.5s infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.6; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <h1></h1>
+
+  <script>
+    // Wait 20 seconds, then redirect
+    setTimeout(function() {
+      window.location.href = "https://qualtricsxmm7rzfs4bq.qualtrics.com/jfe/form/SV_d6IQ43x7oovIchE";
+    }, 20000);
+  </script>
+</body>
+</html>
